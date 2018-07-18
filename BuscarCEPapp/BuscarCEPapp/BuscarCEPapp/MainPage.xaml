@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BuscarCEPapp"
+             x:Class="BuscarCEPapp.MainPage">
+
+    <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30">
+        <!-- oraniza os elementos, um abaixo do outro, empilhar Stack - Pilhar-->
+        <!-- Place new controls here -->
+        <Image x:Name="LOGO"
+            Source="LogoCorreios.png"
+           />
+
+        <Entry x:Name="CEP"
+            Placeholder="Digite o CEP"
+            PlaceholderColor="#FFFFFF"
+            BackgroundColor="#FFFFFF"
+          />
+
+        <Button x:Name="BOTAO"            
+            Text="Buscar Cep"
+            TextColor="#FFFFFF"
+            BackgroundColor="#00416B"
+        />
+
+        <Label x:Name="RESULTADO"
+           Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           />
+    </StackLayout>
+
+</ContentPage>
