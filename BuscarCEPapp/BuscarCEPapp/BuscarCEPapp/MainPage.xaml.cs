@@ -59,14 +59,14 @@ namespace BuscarCEPapp
             if (cep.Length != 8)
             {
                 // error
-                DisplayAlert("Erro", "CEP inválido", "cep deve conter 8 caracteres Numericos!!", "OK");
+                DisplayAlert("Erro", "CEP inválido", "Erro em tamanho diferente de 8 caracteres!!", "OK");
 
                 return valido = false;
             }
             if (!int.TryParse(cep, out NovoCEP))
             { // CONVERSÃO PARA VERFIFICAR SE cep é Numerico TryParse(entrada, saida (out) = 0);
 
-                DisplayAlert("Erro", "CEP inválido", "cep deve conter 8 caracteres Numericos!!", "OK");
+                DisplayAlert("Erro", "CEP inválido", "erro em não colocar só numeros no cep!!", "OK");
 
                 return valido = false;
                
